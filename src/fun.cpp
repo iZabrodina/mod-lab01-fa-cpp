@@ -2,7 +2,7 @@
 #include "fun.h"
 
 unsigned int faStr1(const char* str) {
-        int i = 0, schet = 0, Slovo = 0, Numer = 0; 
+        int i = 0, schet = 0, Slovo = 0, Numer = 0;
         while (str[i] != '\0') {
                 if (Slovo == 0 && str[i] != ' ') {
                         if (str[i] > 57 || str[i] < 48) Numer = 1;
@@ -70,8 +70,8 @@ unsigned int faStr3(const char* str) {
                 i++;
         }
         if (Slovo == 1) Sum = Sum + Leng;
-        Sum = Sum / (float)schet;
+        Sum = Sum / static_cast<float>schet;
         Answer = Sum;
-        if (Sum - (float)Answer >= 0.5) Answer++;
+        if (Sum - static_cast<float>Answer >= 0.5) Answer++;
         return Answer;
 }
