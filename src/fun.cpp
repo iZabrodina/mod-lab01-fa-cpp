@@ -70,8 +70,8 @@ unsigned int faStr3(const char* str) {
                 i++;
         }
         if (Slovo == 1) Sum = Sum + Leng;
-        Sum = Sum / (float)schet;
+        Sum = Sum / static_cast<float>(schet);
         Answer = Sum;
-        if (Sum - (float)Answer >= 0.5) Answer++;
+        if (Sum - static_cast<float>(Answer) >= 0.5) Answer++;
         return Answer;
 }
