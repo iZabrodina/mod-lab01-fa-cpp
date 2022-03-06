@@ -1,8 +1,7 @@
 // Copyright 2022 UNN-IASR
 #include "fun.h"
 
-unsigned int faStr1(const char* str)
-{
+unsigned int faStr1(const char* str) {
 	int i = 0, schet = 0, Slovo = 0, Numer = 0; 
 	while (str[i] != '\0') {
 		if (Slovo == 0 && str[i] != ' ') {
