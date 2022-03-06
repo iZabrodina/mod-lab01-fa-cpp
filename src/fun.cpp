@@ -16,7 +16,6 @@ unsigned int faStr1(const char* str) {
 			Numer = 0;
 			Slovo = 0;
 		}
-
 		i++;
 	}
 	if (Slovo == 1 && Numer == 1) schet++;
@@ -39,7 +38,6 @@ unsigned int faStr2(const char* str) {
 			Number = 0;
 			Slovo = 0;
 		}
-
 		i++;
 	}
 	if (Slovo == 1 && Number == 1) schet++;
